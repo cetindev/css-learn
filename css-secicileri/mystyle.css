@@ -1,0 +1,118 @@
+body {
+  background-color: rgba(255, 0, 0, 0.3) ;
+  font-family: "Open Sans", sans-serif; 
+}
+
+#id{
+  background-color: yellow;
+}
+ 
+.class{
+  background-color: blue;
+}
+
+.benimalanim1,
+.benimalanim2{
+  background: yellow;
+  color: white;
+}
+.benimalanim2{
+  color: red;
+}
+.benimalanim2 > span{
+  color: blue;
+}
+.benimalanim3 > strong > span {
+  color: blue;
+}
+ .link {
+  background: yellow;
+}
+.link:hover {
+  background: red;
+}
+.link:focus{
+  background: blue;
+}
+.link:active{
+  background: green;
+} 
+/* .link:visited{
+  background: purple;
+} */
+
+/* ul li:first-child{
+  background: yellow;
+}
+ul li:last-child{
+  background: red;
+} */
+ul li:nth-last-child(even){
+  background:yellow ;
+}
+
+/* .video5:nth-child(1){
+  background: green;
+} */
+.video5 > li:nth-last-child(even){
+  background: yellow;
+}
+
+.ders::first-letter{
+  background: yellow;
+  font-size: 24px;
+}
+.ders::first-line{
+  background: yellow;
+  font-size: 24px;
+}
+
+.yedi::before,
+.yedi::after{
+  content:"" ;
+  display: inline-block;
+  background: yellow;
+  width: 20px;
+  height: 20px;
+}
+article::before,
+article::after{
+  content:"" ;
+  display: inline-block;
+  background: yellow;
+  width: 20px;
+  height: 20px;
+}
+
+::selection{
+  background: purple;
+  color: white;
+}
+article::selection{
+  background: red;
+  color: black;
+}
+.ders8 > p:target{
+  background: yellow;
+}
+.ders9:empty { 
+  background: yellow;
+  width: 200px;
+  height: 20px;
+}
+/* h1{
+  color: black;
+}
+:not(h1,p) {
+  color: red;
+} */
+
+[title~=flower] {
+  border: 5px solid yellow;
+}
+div[class^="test"] {
+  background: #ffff00;
+}
+[lang|=e] {
+  background: yellow;
+}

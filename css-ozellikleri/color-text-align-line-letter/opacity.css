@@ -1,0 +1,23 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 1500px;
+    margin: 100px;;
+}
+.box1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: gray;
+    overflow: hidden;
+    opacity: 0.6;
+    user-select: none;
+}
+.box{
+    width: 100%;
+    background: gray;
+}
+a {
+    pointer-events: none;
+}

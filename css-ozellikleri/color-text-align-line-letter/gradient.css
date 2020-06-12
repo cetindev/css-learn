@@ -1,0 +1,15 @@
+body{
+    font-family: 'Open Sans' ,sans-serif;
+    height: 1000px;
+    background-color: #FEE140;
+    background-image: -webkit-linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    background-image: -moz-linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    background-image: -o-linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+}
+.cover {
+    width: 100%;
+    height: 500px;
+
+}

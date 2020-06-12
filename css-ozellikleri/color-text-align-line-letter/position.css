@@ -1,0 +1,33 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 1000px;
+    margin: 80px;
+}
+
+div{
+    top: 200px;
+    background: gray;
+    position: relative;
+    height: 200px;
+    
+}
+span{
+    left:  30px;
+    bottom: 30px;
+    background: yellow;
+    position: absolute;
+    
+}
+
+.fixed{
+    width: 100%;
+ background: gray;
+ position: fixed;
+ height: 100px;
+ padding: 40px;
+ left: 0;
+ top: 0;
+ display: inline-block;
+ border: 5px solid red;
+ border-radius: 40px;
+}
