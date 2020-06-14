@@ -1,44 +1,89 @@
 
 /* <body> font-size 14px ve background #f2f2f2 */
-  
+body {
+    font-size: 14px;
+    background-color: #f2f2f2;
 
+}
 /* h1 etiketine gray border ve padding 5px ekleyin  */
-
+h1 {
+  padding: 5px;
+  border: 1px solid gray;
+}
 /* h2 etiketlerinin yazı rengini kırmızı yapınız */
-
+h2 {
+    color: red;
+}
 /* h2 etiketlerinden sınıfı active olana yeşil border ekle */
-
+h2.active {
+    border: 1px solid green;
+    /*eğer boşluk bıraksaydık 
+    h2 etiketinin altındaki
+    active classlarını baz alacaktı*/
+}
 /* paragraf id'sine sahip olan etikete font kalınlığı verin*/
-
+p#paragraf {
+    font-weight: bold;
+}
 /* div içindeki h3 etiketlerine gold arkaplan ekle */ 
-
+div h3 {
+    background-color: gold;
+}
 /*h1 den sonra gelen aynı seviyedeki tüm p arkaplan red olsun  */
-
+h1~p {
+    background-color: red;
+    /* '~' bu işaret kendinden hemen sonra
+    aynı seviyedeki etiklere etki eder */
+}
 /*div içindeki tüm p etiketlerinin arka planını yeşil yapın  */
-
+div p {
+    background-color: green;
+}
 /*Tüm liste elemanlarına gray border ve margin-top:2px ekleyin.*/
-
+ul li {
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 5px;
+}
 /* active sınıfına sahip tüm elemanlara gold arkaplan ekleyin..*/
-
+ ul li.active {
+    background-color: gold;
+}
 /* liste elemanlarından ilkinin kelime aralığını arttır */
-
+ul li:first-child {
+     word-spacing: 5px;
+}
 /* liste elemanlarından en sondakinin harf aralığını arttır */
-
+ul li:last-child {
+    letter-spacing: 5px;
+}
 /* liste eleman index i tek olanların yazı rengini yeşil */
-
+ul li:nth-child(odd) {
+    color: green;
+    font-weight: bold;
+}
 /* liste eleman index i çift olanların yazı rengini turuncu */
-
+ul li:nth-child(even) {
+    color: orange;
+    font-weight: bold;
+}
 /*input nesnelerinden text ve password olanlara aşağıdaki css kodlarını uygulayın.
-
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-
 */
+input[type="text"],input[type="password"] {
+    width: 100%;
+    /* display: block; */
+    padding: 12px 20px;/*12 px altdan üsten 20 px ise sağdan solda*/
+    margin: 8px 0;
+    box-sizing: border-box;/*
+    Eğer box-sizing'i border-box yaparsak padding ve margi değerlerini 
+    o width deki %100 değerine almıyor */
+}
 
 /*input nesnelerinden type i submit olana aşağıdaki css kodlarını uygulayın.
-
     width: 100%;
     background-color: green;
     color: white;
@@ -47,9 +92,26 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-
 */
+input[type="submit"] {
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 12px 18px;/*Kutuyla içindeki yazı arasındaki
+    boşluk*/
+    margin: 7px 0;/*7px altdan ve üstden */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;/*hover olduğunda imlecin şekli değişiyor*/
+
+}
 
 /*submit butonuna hover olayı gerçekleştirğinde arkaplan rengini #45a049 yapınız */
+input[type= "submit"]:hover {
+    background-color: #45a0 49;
 
+}
 /*input kutularından type i submit olayanların focus olayı gerçekleştiğinde arkaplan renklerini lightgoldenrodyellow yapın. */
+ input[type= "text"]:focus,input[type= "password"]:focus {
+     background-color: lightgoldenrodyellow;
+ }
