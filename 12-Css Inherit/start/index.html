@@ -5,31 +5,73 @@
 	<meta charset="UTF-8">
 	<title>Css Inherit</title>
 	<style>
-		
+		body {
+			color: brown;
+			font-size: 20px;
+		}
+
+		ul {
+			color: darkgoldenrod;
+			font-size: 15px;
+		}
+
+		li {
+			color: yellowgreen;
+		}
+
+		.orange {
+			color: orange !important;
+		}
+
+		#passive {
+			color: gray;
+			font-size: 55px;
+		}
+
+		a {
+			color: inherit;
+		}
+
+		span {
+			color: red;
+			border: 1px solid green;
+		}
+
+		#inherit span {
+			/*HEMEN sonra boşlukdan sonra içinde olduğu anlamına gelir-*/
+			color: inherit;
+		}
+
+
+		/*
+		burda inherit olayı anlatıyor. İnherit ne demek sözz hakkı sahibi olma olayıdır
+		İlk Söz hakkı olma olayı
+		İD > CLASS > ETİKET > BODY  
+		*/
 	</style>
 </head>
 
 <body>
 
 
-	<h1>Komple Uygulamalı Web Geliştirme</h1>,
+	<h1 class="orange">Komple Uygulamalı Web Geliştirme</h1>,
 
 
 	<ul>
-		<li>Html5</li>
+		<li id="passive" class="orange">Html5</li>
 		<li>Css</li>
-		<li>Javascript</li>
+		<li class="orange">Javascript</li>
 		<li>
 			<a href="#">Jquery</a>
 		</li>
 	</ul>
 
 
-	<div>
+	<div id="inherit" style="color: aqua;">
 		Lorem ipsum <span>dolor sit amet,</span> consectetur adipisicing.
 	</div>
 
-	<div>
+	<div style="color:green;">
 		Lorem ipsum <span>dolor sit amet,</span> consectetur adipisicing.
 	</div>
 
