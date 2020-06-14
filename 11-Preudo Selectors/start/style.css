@@ -1,0 +1,76 @@
+Pseudo  ELements
+p::first-line {
+  color: brown;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+p.about::first-line {
+  color: green;
+}
+p::first-letter {
+  font-size: 48px;
+}
+
+p::after {
+  content: "";
+  display: block;
+  background-color: yellow;
+  padding: 10px;
+}
+h1::before {
+  content: "";
+  display: block;
+  background-color: yellow;
+  padding: 10px;
+}
+/*Pseudo Class*/
+
+ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+  list-style: disc;
+}
+ul li:first-child {
+  background-color: rgb(207, 32, 32);
+}
+ul li:last-child {
+  background-color: rgb(207, 32, 32);
+}
+ul li:nth-of-type(even) {
+  border: 2px solid green;
+}
+ul li:nth-of-type(odd) {
+  border: 2px solid blue;
+}
+
+a {
+  padding: 5px 8px;
+  text-decoration: none;
+  display: block;
+  width: 80px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+a:link {
+color: red;
+}
+a:visited {
+  color: blue;
+}
+a:hover{
+  color: white;
+  background: green;
+}
+a:active {
+  color: green;
+  background: gold;
+}
+span {
+  display: block ;
+  background: yellow;
+  padding: 20px;
+}
+div:hover span{
+   display: none;
+}
