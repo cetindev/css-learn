@@ -22,26 +22,48 @@
 	</p>
 
 	<p title="forth paragraph">
-		p[title="#4 paragraph"] selects all paragraphs with a title attribute containing the exact text, #4 paragraph. Matches are case-sensitive and must match letter-for-letter including whitespace.
+		p[title="#4 paragraph"] selects all paragraphs with a title attribute containing the exact text, #4 paragraph.
+		Matches are case-sensitive and must match letter-for-letter including whitespace.
+		<b>Burda '~' bu işaret ile p'nin altındaki title'ın adının
+			bir kelimesi olması yeterlidir
+		</b><br>
+		<i>p[title~="forth"] {
+			background-color: red;
+			}</i>
 	</p>
 
 
 	<p>
-		<a href="https://www.example.net" target="_blank">example 1</a>
-		<a href="http://www.example.com">example 2</a>
+		<a href="https://www.example.net" target="_blank">
+			Burda <br>
+			<b>a[href ^= https] {
+				color: red;
+				}</b> <br>
+			kullanıldı ve attributu https ile başlayan bir ismi var ise o alınır.
+
+		</a><br>
+		<a href="http://www.example.com">
+		 		</a>
 	</p>
-	
 	<p>
 		<input type="text" name="Name">
 		<input type="button" value="Button">
 	</p>
-	
-	
-	
 	<img src="" alt="">
 	<div id=""></div>
 	<a href="" target=""></a>
+
+	<p>
+		<b>
+			<i>
+				Ayrıca bu attribute selectors işlemini bir özellik değil
+				istediğimiz kadar yapabiliriz Örnek aşağıda
+			</i>
+		</b>
+	</p>
 	
+
+
 </body>
 
 </html>

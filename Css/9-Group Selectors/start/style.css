@@ -9,3 +9,15 @@
 	7 : (p + div)=> p etiketinden sonra gelen div 
 
 */
+/*
+p {
+	border: 1px solid red;
+}
+*/
+div p {
+	border: 1px solid blue;
+}
+
+.container div.box {
+	border: 1px solid red;
+}
