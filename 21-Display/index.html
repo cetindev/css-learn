@@ -4,32 +4,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Css Display</title>
-	<style>			
-		
-	/** Display : none | inline | block | inline-block */
-		    
-	/** Browser Defaults */
-		
-	/** Override Defaults */	
-		
-		div{
+	<style>
+		/** Display : none | inline | block | inline-block */
+
+		/** Browser Defaults */
+
+		/** Override Defaults */
+		div {
 			display: inline-block;
 			height: 200px;
 			background: red;
 			margin: 5px;
 		}
-		
-		#first{
+
+		#first {
+			
 			width: 500px;
 		}
-		
-		span{
-			background: blue;
-			width: 200px;
-			height: 100px;
-			display: inline-block;
+
+		span {
+			background-color: blue;
+			width: 500px;
+			/*Burda span defult olarak tarayıcı inline özelliğini veriyor ve inline özelliğe 
+			width özellikleri ekleyemiyoruz ama block attributune widht özelliğini verebiliryoruz*/
+			display: block;
+			/*Ama inline*block da  hem inline hem de block özelliklerini alabiliyoruz */
 		}
-		
 	</style>
 </head>
 
@@ -38,7 +38,7 @@
 
 	<div id="first">first</div>
 	<div id="second">second</div>
-	
+
 	<span>deneme 1 Lorem ipsum.</span>
 	<span>deneme 2</span>
 	<span>deneme 3</span>
