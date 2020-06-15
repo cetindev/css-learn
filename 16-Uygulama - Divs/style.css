@@ -17,10 +17,13 @@ body {
 	margin: 0px 0px ;
 	margin-inline: 0px;
 	border-right: 0px;
+	margin-right: 0px;
 }
 
 #other-posts{
-	width: 25%;
+	float: right;
+	margin-left: 8px;
+	width: 20%;
 	background-color: bisque;
 	display: inline-block;
 	box-sizing: border-box;
