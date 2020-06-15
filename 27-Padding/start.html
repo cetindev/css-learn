@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Margin</title>
-	<style>		
-	
-		.box{
-			
+	<link rel="stylesheet" href="../normalize.css">
+	<style>
+		.box {
+			margin-bottom: 10px;
+			width: 500px;
 		}
-		
-		#first{
+
+		#first {
 			background: gold;
+			/*
+			padding: 20px;
+			display: block;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			margin-left: 10px; */
+			padding: 50px 50px 50px 100px;
 		}
-		
-		#second{
-			background:green;		
-			
-		}	
-		 
+
+		#second {
+			background: green;
+
+		}
+
+		span {
+			background: red;
+			margin-left: 20px;
+		}
+
+		#blue {
+			background: orange;
+		}
 	</style>
 </head>
-<body>	
-	
+
+<body>
+
 	<div class="box" id="first">
 		Komple Uygulamalı Web Geliştirme
 	</div>
 	<div class="box" id="second">
 		Asp net Core 2 Mvc Kursu : Sıfırdan İleri Seviyeye
 	</div>
-	
+	<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis eos natus, tempora perspiciatis
+		dolorum molestiae delectus, culpa, earum quidem iusto unde? Sequi a qui minima, quibusdam exercitationem distinctio
+		iusto?</span><br>
+	<span id="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nemo. Quos sequi, iusto quisquam, ad
+		amet odit
+		tenetur explicabo modi voluptates eveniet eligendi cupiditate maiores beatae omnis inventore eos rerum?</span>
+
 </body>
+
 </html>
