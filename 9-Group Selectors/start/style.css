@@ -7,5 +7,4 @@
 	5 : (div > p) => üst etiketi div olan tüm p 
 	6 : (p ~ div)=> p ile aynı seviyede tüm div 
 	7 : (p + div)=> p etiketinden sonra gelen div 
-
 */
