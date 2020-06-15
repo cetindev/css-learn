@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Styling Text</title>	
+	<title>Styling Text</title>
+	<link rel="stylesheet" href="../normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<style>
-	
-		body{
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			width: 75%;
+			margin: 30px auto;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		p {
+			text-transform: capitalize;
+		}
+
+		p {
+			font-size: 22px;
+			line-height: 150%;
+			word-spacing: 3px;
+			/* text-indent: 20px; */
+			letter-spacing: 1px;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+		.link {
+			color: aqua;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eius, neque. Consequuntur aut eius ex eaque
+		maiores blanditiis alias aperiam modi architecto, itaque quidem? Odit dolores cum, illo culpa
+		<span class="bold italic">
+			<a class="link" href="#">recusandae.</a>
+		</span>
+	</p>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+body{
 			font-family: 'Open Sans', sans-serif;
 			width: 700px;
 			margin: 30px auto;
@@ -36,21 +100,4 @@
 			color: #03a9f4;
 			text-decoration: none;
 		}
-	
-	</style>	
-</head>
-<body>
-
-	
-	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eius, neque. Consequuntur aut eius ex eaque maiores blanditiis alias aperiam modi architecto, itaque quidem? Odit dolores cum, illo culpa 
-		<span class="bold italic">
-			<a class="link" href="#">recusandae.</a>
-		</span>
-	</p>
-	
-	
-	
-</body>
-</html>
+	 -->
