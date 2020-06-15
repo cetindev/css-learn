@@ -16,3 +16,18 @@
 {
 	
 }
+
+.tags li {
+	list-style: none;
+	display: inline;
+	width: 50px;
+	margin-right: 5px;
+}
+.tags {
+	margin: 0;
+	padding: 0;
+}
+.tags li a {
+	text-decoration: none;
+	
+}
