@@ -1,0 +1,30 @@
+Position:
+1.static
+2.relative
+3.fixed
+4.absolute
+5.sticky
+
+1) static:
+Standart olan görünüm 
+2) relative: 
+4 köşeden izalama yapabiliriz. bir örnek
+Ayrı içinde bulunduğu div in içinde kendini hizalayarak
+konumlandırır.
+div {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+3) absolute:
+Bu kendi hizasından çıkar ve ekranın  en üstünden ve en kenarından
+baz alarak yani noraml akışın içinden çıkar   
+
+4)fixed:
+absolute gibi özellikleri var ama bu ekranda sabit kalır
+
+5)sticky:
+Bir menu gibi kullanılan alanları vardır.Ekranda kalır
+
+
+ 
