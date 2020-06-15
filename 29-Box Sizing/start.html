@@ -4,27 +4,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Box Model</title>
+	<link rel="stylesheet" href="../normalize.css">
 	<style>
 		#box1 {
+			box-sizing: content-box;
 			width: 300px;
 			height: 100px;
-			background: green;			
+			background: green;
+			margin: 10px;
+			padding: 10px;
+			border: 10px solid black;
 		}
 
 		#box2 {
+			box-sizing: border-box;
 			width: 300px;
 			height: 100px;
-			background: green;			
+			background: gold;
+			margin: 10px;
+			padding: 10px;
+			border: 10px solid black;
 		}
-
 	</style>
 </head>
 
 <body>
 
 
-	<div id="box1"></div>
-	<div id="box2"></div>
+	<div id="box1">
+		Burda box-sizing: content-box kullanıldı;
+		300px + (10px*2) + (20px*2) => 340px
+	</div>
+	<div id="box2">
+		Burda box-sizing: border-box kullanıldı
+		260px + (10px*2) + (10px *20) => 300px
+	</div>
 
 </body>
 
